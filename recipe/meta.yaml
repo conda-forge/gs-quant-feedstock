@@ -1,5 +1,5 @@
 {% set name = "gs-quant" %}
-{% set version = "1.1.5" %}
+{% set version = "1.2.60" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/gs_quant-{{ version }}.tar.gz
-  sha256: a87a6b5650a90db42841e78427f9528c833823c64b8f534788640b7e46c6f97e
+  sha256: 0d3577c66e00d4d30ecef1b3821ca1baad50e393edd9f3e99970affec87dc6ba
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -26,6 +26,7 @@ requirements:
     - certifi
     - dataclasses-json
     - deprecation
+    - freezegun
     - funcsigs
     - httpx >=0.23.3
     - inflection
@@ -35,9 +36,10 @@ requirements:
     - nest-asyncio
     - numpy <2.0.0
     - opentracing
-    - pandas >=1.4,<2.2
+    - pandas >=1.4
     - pydash <7.0.0
     - python-dateutil >=2.7.0
+    - pytz ==2024.1
     - requests
     - scipy >=1.2.0
     - statsmodels >=0.13.0

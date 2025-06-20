@@ -26,21 +26,19 @@ requirements:
     - certifi
     - dataclasses-json
     - deprecation
-    - freezegun
-    - funcsigs
-    - httpx >=0.23.3
     - inflection
     - lmfit
     - more-itertools
     - msgpack-python
     - nest-asyncio
-    - numpy <2.0.0
-    - opentracing
+    - numpy >1.17.0
+    - opentelemetry-api
+    - opentelemetry-sdk
     - pandas >=1.4
     - pydash <7.0.0
     - python-dateutil >=2.7.0
-    - pytz ==2024.1
     - requests
+    - httpx >=0.23.3
     - scipy >=1.2.0
     - statsmodels >=0.13.0
     - tqdm

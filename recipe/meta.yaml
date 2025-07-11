@@ -1,5 +1,5 @@
 {% set name = "gs-quant" %}
-{% set version = "1.4.11" %}
+{% set version = "1.4.12" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/gs_quant-{{ version }}.tar.gz
-  sha256: a197204642ab70e14829ad417fe73a5dce0e7bccd32d6d6fe9e453b0fd1b95a1
+  sha256: bbc50374f3e2d40d4575f60b939c7691756eb5385a3426dc92ba26875b9759da
 
 build:
   noarch: python
